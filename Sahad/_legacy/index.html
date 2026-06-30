@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A special gift for Sedeen">
+    <meta name="theme-color" content="#fdfbf7">
+    <title>For Sedeen ❤️</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500&family=Alex+Brush&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= LANDING PAGE ================= -->
+    <section id="landing-page" class="active-section">
+        <div class="landing-content">
+            <div class="floral-ornament">
+                <i class="fab fa-pagelines"></i>
+            </div>
+            <h1 class="main-greeting">
+                Dearest, <span class="name-highlight">Sedeen</span>
+            </h1>
+            <p class="sub-greeting">A little something to make you smile</p>
+
+            <button id="enter-btn" class="elegant-btn" type="button">
+                <span>Open Gift</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- ================= DASHBOARD ================= -->
+    <section id="dashboard" class="hidden">
+        <header class="dashboard-header">
+            <h1 class="dashboard-title">Just For You</h1>
+            <div class="divider">
+                <span class="line"></span>
+                <i class="fas fa-heart tiny-heart"></i>
+                <span class="line"></span>
+            </div>
+        </header>
+
+        <div class="cards-grid">
+            <article class="soft-card" data-modal="modal-gallery">
+                <div class="card-icon"><i class="fas fa-camera-retro"></i></div>
+                <h3 class="card-title">Memories</h3>
+                <p class="card-desc">Our captured moments</p>
+            </article>
+
+            <article class="soft-card" data-modal="modal-bouquet">
+                <div class="card-icon"><i class="fas fa-seedling"></i></div>
+                <h3 class="card-title">Beauty</h3>
+                <p class="card-desc">Because you are</p>
+            </article>
+
+            <article class="soft-card" data-modal="modal-song">
+                <div class="card-icon"><i class="fas fa-music"></i></div>
+                <h3 class="card-title">Melody</h3>
+                <p class="card-desc">Our special song</p>
+            </article>
+
+            <article class="soft-card" data-modal="modal-letter">
+                <div class="card-icon"><i class="fas fa-feather-alt"></i></div>
+                <h3 class="card-title">Words</h3>
+                <p class="card-desc">From my heart to yours</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- ================= MODALS ================= -->
+
+    <!-- Gallery Modal -->
+    <div id="modal-gallery" class="modal hidden">
+        <div class="modal-backdrop" data-close></div>
+        <div class="modal-content">
+            <button class="close-btn" data-close><i class="fas fa-times"></i></button>
+            <h2 class="modal-title">Our Museum</h2>
+            <div class="elegant-gallery">
+                <div class="photo-frame"><img src="images/IMG_5262.jpg" alt="Memory">
+                    <p>Photobooth 📸</p>
+                </div>
+                <div class="photo-frame"><img src="images/IMG_5266.jpg" alt="Memory">
+                    <p>Artist ✨</p>
+                </div>
+                <div class="photo-frame"><img src="images/IMG_5294.jpg" alt="Memory">
+                    <p>Sweet 💗</p>
+                </div>
+                <div class="photo-frame"><img src="images/IMG_5296.jpg" alt="Memory">
+                    <p>My beautiful moon 🤩</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bouquet Modal -->
+    <div id="modal-bouquet" class="modal hidden">
+        <div class="modal-backdrop" data-close></div>
+        <div class="modal-content text-center">
+            <button class="close-btn" data-close><i class="fas fa-times"></i></button>
+            <h2 class="modal-title">To My Beautiful Moon</h2>
+            <div class="showcase">
+                <div class="image-border">
+                    <img src="images/IMG_5298.jpg" alt="Sedeen" class="soft-image">
+                </div>
+                <p class="poetry-text">"You are the light that gently wakes my heart."</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Song Modal -->
+    <div id="modal-song" class="modal hidden">
+        <div class="modal-backdrop" data-close></div>
+        <div class="modal-content">
+            <button class="close-btn" data-close><i class="fas fa-times"></i></button>
+            <h2 class="modal-title">Our Melody</h2>
+            <div class="video-container">
+                <video id="songVideo" controls>
+                    <source src="video/video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <!-- Letter Modal -->
+    <div id="modal-letter" class="modal hidden">
+        <div class="modal-backdrop" data-close></div>
+        <div class="modal-content paper-bg">
+            <button class="close-btn" data-close><i class="fas fa-times"></i></button>
+            <h2 class="modal-title">My Dearest Sedeen,</h2>
+            <div class="letter-body">
+                <p id="typewriter-text"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
