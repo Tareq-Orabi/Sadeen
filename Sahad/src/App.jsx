@@ -3,6 +3,7 @@ import LandingPage from './components/LandingPage';
 import Dashboard from './components/Dashboard';
 import Modal from './components/Modal';
 import FloatingParticles from './components/FloatingParticles';
+
 import MagicalCursor from './components/MagicalCursor';
 
 const MODALS = {
