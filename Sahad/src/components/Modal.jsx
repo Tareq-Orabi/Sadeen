@@ -1,23 +1,27 @@
 import React, { useEffect, useMemo, useRef } from 'react';
 import Typewriter from './Typewriter';
 
-const BASE_URL = import.meta.env.BASE_URL;
+import img1 from '../assets/images/202421C8-5B02-4D77-937E-419CC8288D89.JPG';
+import img2 from '../assets/images/671E9DB9-3047-4BCD-BCC8-8C6CBDC60A2D.JPG';
+import img3 from '../assets/images/CDCA64FA-C900-4030-ADFA-9292A1AE0CAF.JPG';
+import img4 from '../assets/images/D5633D37-A862-425E-9E41-B4AF23002AA4.JPG';
+import imgBouquet from '../assets/images/IMG_7402.jpg';
 
 const galleryPhotos = [
     {
-        src: `${BASE_URL}images/202421C8-5B02-4D77-937E-419CC8288D89.JPG`,
+        src: img1,
         caption: 'Photobooth 📸',
     },
     {
-        src: `${BASE_URL}images/671E9DB9-3047-4BCD-BCC8-8C6CBDC60A2D.JPG`,
+        src: img2,
         caption: 'Artist ✨',
     },
     {
-        src: `${BASE_URL}images/CDCA64FA-C900-4030-ADFA-9292A1AE0CAF.JPG`,
+        src: img3,
         caption: 'Sweet 💗',
     },
     {
-        src: `${BASE_URL}images/D5633D37-A862-425E-9E41-B4AF23002AA4.JPG`,
+        src: img4,
         caption: 'My beautiful moon 🤩',
     },
 ];
@@ -72,7 +76,7 @@ const Modal = ({ id, title, onClose }) => {
                 <div className="showcase">
                     <div className="image-border">
                         <img
-                            src={`${BASE_URL}images/IMG_7402.jpg`}
+                            src={imgBouquet}
                             alt="Sedeen"
                             className="soft-image"
                             loading="lazy"
