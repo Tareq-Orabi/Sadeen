@@ -1,21 +1,23 @@
 import React, { useEffect, useMemo, useRef } from 'react';
 import Typewriter from './Typewriter';
 
+const BASE_URL = import.meta.env.BASE_URL;
+
 const galleryPhotos = [
     {
-        src: '/images/202421C8-5B02-4D77-937E-419CC8288D89.JPG',
+        src: `${BASE_URL}images/202421C8-5B02-4D77-937E-419CC8288D89.JPG`,
         caption: 'Photobooth 📸',
     },
     {
-        src: '/images/671E9DB9-3047-4BCD-BCC8-8C6CBDC60A2D.JPG',
+        src: `${BASE_URL}images/671E9DB9-3047-4BCD-BCC8-8C6CBDC60A2D.JPG`,
         caption: 'Artist ✨',
     },
     {
-        src: '/images/CDCA64FA-C900-4030-ADFA-9292A1AE0CAF.JPG',
+        src: `${BASE_URL}images/CDCA64FA-C900-4030-ADFA-9292A1AE0CAF.JPG`,
         caption: 'Sweet 💗',
     },
     {
-        src: '/images/D5633D37-A862-425E-9E41-B4AF23002AA4.JPG',
+        src: `${BASE_URL}images/D5633D37-A862-425E-9E41-B4AF23002AA4.JPG`,
         caption: 'My beautiful moon 🤩',
     },
 ];
@@ -70,7 +72,7 @@ const Modal = ({ id, title, onClose }) => {
                 <div className="showcase">
                     <div className="image-border">
                         <img
-                            src="/images/IMG_7402.jpg"
+                            src={`${BASE_URL}images/IMG_7402.jpg`}
                             alt="Sedeen"
                             className="soft-image"
                             loading="lazy"
